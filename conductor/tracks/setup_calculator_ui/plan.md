@@ -16,7 +16,7 @@
 ## Phase 3: Domain Layer & Pre-population
 - [x] Task: Create a `PrepopulateCallback` for Room to seed default categories (Food, Transport, etc.) on first run. ff558a6
 - [x] Task: Create `SaveTransactionUseCase`. 0ef3daf
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Domain Layer & Pre-population' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Phase 3: Domain Layer & Pre-population' (Protocol in workflow.md)
 
 ## Phase 4: UI Foundation (Tactile Pop)
 - [ ] Task: Define Color Palette in `ui/theme/Color.kt` (Indigo, Pink, Emerald).
