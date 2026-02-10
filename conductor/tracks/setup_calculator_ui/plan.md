@@ -7,7 +7,7 @@
 
 ## Phase 2: Data Layer (Room)
 - [x] Task: Create `Category` and `Transaction` Entities. 57414a1
-- [ ] Task: Create `CategoryDao` and `TransactionDao`.
+- [x] Task: Create `CategoryDao` and `TransactionDao`. 76d0559
 - [ ] Task: Create `AppDatabase` and configured Room.
 - [ ] Task: Implement `LocalRepository` to manage data access.
 - [ ] Task: Create a Hilt Module (`DatabaseModule`) to provide DAO and Repository instances.
