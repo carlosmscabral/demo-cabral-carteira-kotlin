@@ -6,7 +6,7 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Scaffolding & Dependencies' (Protocol in workflow.md)
 
 ## Phase 2: Data Layer (Room)
-- [ ] Task: Create `Category` and `Transaction` Entities.
+- [x] Task: Create `Category` and `Transaction` Entities. 57414a1
 - [ ] Task: Create `CategoryDao` and `TransactionDao`.
 - [ ] Task: Create `AppDatabase` and configured Room.
 - [ ] Task: Implement `LocalRepository` to manage data access.
