@@ -19,7 +19,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Domain Layer & Pre-population' (Protocol in workflow.md) [checkpoint: 90a6954]
 
 ## Phase 4: UI Foundation (Tactile Pop)
-- [ ] Task: Define Color Palette in `ui/theme/Color.kt` (Indigo, Pink, Emerald).
+- [x] Task: Define Color Palette in `ui/theme/Color.kt` (Indigo, Pink, Emerald). 86cbcc0
 - [ ] Task: Define Type Styles in `ui/theme/Type.kt`.
 - [ ] Task: Create `TactileButton` composable (Common button style with animation).
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: UI Foundation (Tactile Pop)' (Protocol in workflow.md)
