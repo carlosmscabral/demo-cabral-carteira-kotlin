@@ -32,7 +32,7 @@
 
 ## Phase 6: Feature Assembly & Integration
 - [x] Task: Create `CalculatorViewModel` (Handle state: input string, selected category, saving). ebac82a
-- [ ] Task: Implement `CalculatorScreen` (Assemble components, observe ViewModel).
+- [x] Task: Implement `CalculatorScreen` (Assemble components, observe ViewModel). 1aa8a08
 - [ ] Task: Update `MainActivity` to host the `CalculatorScreen`.
 - [ ] Task: Verify functionality (Type -> Select Category -> Save -> Check DB/Log).
 - [ ] Task: Conductor - User Manual Verification 'Phase 6: Feature Assembly & Integration' (Protocol in workflow.md)
