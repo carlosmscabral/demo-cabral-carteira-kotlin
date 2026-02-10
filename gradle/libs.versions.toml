@@ -12,7 +12,7 @@ hilt = "2.50"
 hiltNavigationCompose = "1.2.0"
 navigationCompose = "2.7.7"
 lifecycleRuntimeCompose = "2.7.0"
-composeBom = "2024.02.00"
+composeBom = "2024.12.01"
 ksp = "1.9.22-1.0.17"
 
 [libraries]
