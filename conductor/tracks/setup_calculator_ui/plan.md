@@ -26,7 +26,7 @@
 
 ## Phase 5: Calculator Components
 - [x] Task: Create `AmountDisplay` composable (Large text, auto-formatting logic). 7c3fe9a
-- [ ] Task: Create `NumericKeypad` composable (Grid layout).
+- [x] Task: Create `NumericKeypad` composable (Grid layout). 704d810
 - [ ] Task: Create `CategorySelector` composable (Horizontal/Grid list).
 - [ ] Task: Conductor - User Manual Verification 'Phase 5: Calculator Components' (Protocol in workflow.md)
 
