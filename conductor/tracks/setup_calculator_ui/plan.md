@@ -1,7 +1,7 @@
 # Implementation Plan - Setup & Calculator-First UI
 
 ## Phase 1: Project Scaffolding & Dependencies
-- [~] Task: Add project dependencies (Room, Hilt, Navigation) to `libs.versions.toml` and `app/build.gradle.kts`.
+- [x] Task: Add project dependencies (Room, Hilt, Navigation) to `libs.versions.toml` and `app/build.gradle.kts`. ec7aef6
 - [ ] Task: Configure Hilt (Application class, AndroidManifest, `@AndroidEntryPoint`).
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Scaffolding & Dependencies' (Protocol in workflow.md)
 
