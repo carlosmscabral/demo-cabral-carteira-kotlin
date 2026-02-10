@@ -11,7 +11,7 @@
 - [x] Task: Create `AppDatabase` and configured Room. 86df560
 - [x] Task: Implement `LocalRepository` to manage data access. 27f8a60
 - [x] Task: Create a Hilt Module (`DatabaseModule`) to provide DAO and Repository instances. 02135f7
-- [~] Task: Conductor - User Manual Verification 'Phase 2: Data Layer (Room)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Data Layer (Room)' (Protocol in workflow.md) [checkpoint: 1ecb0e2]
 
 ## Phase 3: Domain Layer & Pre-population
 - [ ] Task: Create a `PrepopulateCallback` for Room to seed default categories (Food, Transport, etc.) on first run.
