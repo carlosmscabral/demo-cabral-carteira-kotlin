@@ -25,7 +25,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 4: UI Foundation (Tactile Pop)' (Protocol in workflow.md) [checkpoint: 5f5e3d1]
 
 ## Phase 5: Calculator Components
-- [ ] Task: Create `AmountDisplay` composable (Large text, auto-formatting logic).
+- [x] Task: Create `AmountDisplay` composable (Large text, auto-formatting logic). 7c3fe9a
 - [ ] Task: Create `NumericKeypad` composable (Grid layout).
 - [ ] Task: Create `CategorySelector` composable (Horizontal/Grid list).
 - [ ] Task: Conductor - User Manual Verification 'Phase 5: Calculator Components' (Protocol in workflow.md)
