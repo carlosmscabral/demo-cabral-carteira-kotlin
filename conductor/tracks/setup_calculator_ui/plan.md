@@ -31,7 +31,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 5: Calculator Components' (Protocol in workflow.md) [checkpoint: 1db0096]
 
 ## Phase 6: Feature Assembly & Integration
-- [ ] Task: Create `CalculatorViewModel` (Handle state: input string, selected category, saving).
+- [x] Task: Create `CalculatorViewModel` (Handle state: input string, selected category, saving). ebac82a
 - [ ] Task: Implement `CalculatorScreen` (Assemble components, observe ViewModel).
 - [ ] Task: Update `MainActivity` to host the `CalculatorScreen`.
 - [ ] Task: Verify functionality (Type -> Select Category -> Save -> Check DB/Log).
