@@ -2,7 +2,7 @@
 
 ## Phase 1: Project Scaffolding & Dependencies
 - [x] Task: Add project dependencies (Room, Hilt, Navigation) to `libs.versions.toml` and `app/build.gradle.kts`. ec7aef6
-- [ ] Task: Configure Hilt (Application class, AndroidManifest, `@AndroidEntryPoint`).
+- [x] Task: Configure Hilt (Application class, AndroidManifest, `@AndroidEntryPoint`). 4e92e25
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Scaffolding & Dependencies' (Protocol in workflow.md)
 
 ## Phase 2: Data Layer (Room)
