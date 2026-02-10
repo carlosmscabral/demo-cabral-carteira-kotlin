@@ -14,7 +14,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Data Layer (Room)' (Protocol in workflow.md) [checkpoint: 1ecb0e2]
 
 ## Phase 3: Domain Layer & Pre-population
-- [ ] Task: Create a `PrepopulateCallback` for Room to seed default categories (Food, Transport, etc.) on first run.
+- [x] Task: Create a `PrepopulateCallback` for Room to seed default categories (Food, Transport, etc.) on first run. ff558a6
 - [ ] Task: Create `SaveTransactionUseCase`.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Domain Layer & Pre-population' (Protocol in workflow.md)
 
