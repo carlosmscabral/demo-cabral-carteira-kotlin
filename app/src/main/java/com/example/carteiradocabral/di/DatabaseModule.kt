@@ -24,7 +24,7 @@ object DatabaseModule {
             AppDatabase::class.java,
             "carteira_do_cabral.db"
         )
-        .addCallback(object : RoomDatabase.Callback() {
+        .addCallback(object : androidx.room.RoomDatabase.Callback() {
             override fun onCreate(db: androidx.sqlite.db.SupportSQLiteDatabase) {
                 super.onCreate(db)
                 val categories = listOf(
