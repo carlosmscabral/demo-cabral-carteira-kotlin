@@ -16,9 +16,9 @@
 *   **Visual Immediacy:** Provide instant feedback on financial health via a simple "Budget Glance" and tactile haptic feedback, avoiding complex reports during data entry.
 
 ## 4. Initial Concept
-(Derived from MVP Checklist)
-*   **Calculator-First UI:** Main Activity opens directly to numeric input.
-*   **One-Tap Categorization:** Grid of emoji buttons immediately saves the transaction.
-*   **Room Implementation:** Save `Transaction` entity with `timestamp`, `amount`, and `category`.
-*   **Budget Glance:** Simple "Remaining Budget" calculation displayed on the main input screen.
-*   **Haptic Feedback:** Tactile vibrations on keypad and save confirmation.
+(Status: Implemented)
+*   [x] **Calculator-First UI:** Main Activity opens directly to numeric input.
+*   [x] **One-Tap Categorization:** Grid of emoji buttons immediately saves the transaction.
+*   [x] **Room Implementation:** Save `Transaction` entity with `timestamp`, `amount`, and `category`.
+*   [ ] **Budget Glance:** Simple "Remaining Budget" calculation displayed on the main input screen.
+*   [x] **Haptic Feedback:** Tactile vibrations on keypad and save confirmation.
