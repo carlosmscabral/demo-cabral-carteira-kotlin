@@ -1,0 +1,8 @@
+{
+  "track_id": "setup_calculator_ui",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-10T00:00:00Z",
+  "updated_at": "2026-02-10T00:00:00Z",
+  "description": "Set up the Android project structure and implement the "Calculator-First" P0 UI with basic Room database integration."
+}
