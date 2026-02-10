@@ -56,6 +56,9 @@ class CalculatorViewModel @Inject constructor(
 
     fun onCategorySelected(category: Category) {
         _selectedCategory.value = category
+        if (_amountCents.value > 0) {
+            onSaveClick()
+        }
     }
 
     fun onSaveClick() {
