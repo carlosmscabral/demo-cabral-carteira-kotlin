@@ -9,7 +9,7 @@
 - [x] Task: Create `Category` and `Transaction` Entities. 57414a1
 - [x] Task: Create `CategoryDao` and `TransactionDao`. 76d0559
 - [x] Task: Create `AppDatabase` and configured Room. 86df560
-- [ ] Task: Implement `LocalRepository` to manage data access.
+- [x] Task: Implement `LocalRepository` to manage data access. 27f8a60
 - [ ] Task: Create a Hilt Module (`DatabaseModule`) to provide DAO and Repository instances.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Data Layer (Room)' (Protocol in workflow.md)
 
