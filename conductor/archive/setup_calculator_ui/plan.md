@@ -1,0 +1,38 @@
+# Implementation Plan - Setup & Calculator-First UI
+
+## Phase 1: Project Scaffolding & Dependencies
+- [x] Task: Add project dependencies (Room, Hilt, Navigation) to `libs.versions.toml` and `app/build.gradle.kts`. ec7aef6
+- [x] Task: Configure Hilt (Application class, AndroidManifest, `@AndroidEntryPoint`). 4e92e25
+- [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Scaffolding & Dependencies' (Protocol in workflow.md)
+
+## Phase 2: Data Layer (Room)
+- [x] Task: Create `Category` and `Transaction` Entities. 57414a1
+- [x] Task: Create `CategoryDao` and `TransactionDao`. 76d0559
+- [x] Task: Create `AppDatabase` and configured Room. 86df560
+- [x] Task: Implement `LocalRepository` to manage data access. 27f8a60
+- [x] Task: Create a Hilt Module (`DatabaseModule`) to provide DAO and Repository instances. 02135f7
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Data Layer (Room)' (Protocol in workflow.md) [checkpoint: 1ecb0e2]
+
+## Phase 3: Domain Layer & Pre-population
+- [x] Task: Create a `PrepopulateCallback` for Room to seed default categories (Food, Transport, etc.) on first run. ff558a6
+- [x] Task: Create `SaveTransactionUseCase`. 0ef3daf
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Domain Layer & Pre-population' (Protocol in workflow.md) [checkpoint: 90a6954]
+
+## Phase 4: UI Foundation (Tactile Pop)
+- [x] Task: Define Color Palette in `ui/theme/Color.kt` (Indigo, Pink, Emerald). 86cbcc0
+- [x] Task: Define Type Styles in `ui/theme/Type.kt`. 9dd88a4
+- [x] Task: Create `TactileButton` composable (Common button style with animation). 8872ecb
+- [x] Task: Conductor - User Manual Verification 'Phase 4: UI Foundation (Tactile Pop)' (Protocol in workflow.md) [checkpoint: 5f5e3d1]
+
+## Phase 5: Calculator Components
+- [x] Task: Create `AmountDisplay` composable (Large text, auto-formatting logic). 7c3fe9a
+- [x] Task: Create `NumericKeypad` composable (Grid layout). 704d810
+- [x] Task: Create `CategorySelector` composable (Horizontal/Grid list). 25be469
+- [x] Task: Conductor - User Manual Verification 'Phase 5: Calculator Components' (Protocol in workflow.md) [checkpoint: 1db0096]
+
+## Phase 6: Feature Assembly & Integration
+- [x] Task: Create `CalculatorViewModel` (Handle state: input string, selected category, saving). ebac82a
+- [x] Task: Implement `CalculatorScreen` (Assemble components, observe ViewModel). 1aa8a08
+- [x] Task: Update `MainActivity` to host the `CalculatorScreen`. 8c75fc4
+- [x] Task: Verify functionality (Type -> Select Category -> Save -> Check DB/Log).
+- [x] Task: Conductor - User Manual Verification 'Phase 6: Feature Assembly & Integration' (Protocol in workflow.md) [checkpoint: b143bc4]
