@@ -12,6 +12,7 @@ import com.example.carteiradocabral.data.local.entities.Transaction
     version = 1,
     exportSchema = false
 )
+@androidx.room.TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun categoryDao(): CategoryDao
     abstract fun transactionDao(): TransactionDao
