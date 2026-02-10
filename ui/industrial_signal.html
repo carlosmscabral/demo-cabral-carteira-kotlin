@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTEIRA DO CABRAL | INDUSTRIAL TERMINAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hazard: '#F5FF00',
+                        warning: '#FF3E00',
+                        industrial: '#2D2D2D',
+                    },
+                    fontFamily: {
+                        sans: ['Archivo Black', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hazard-stripes {
+            background: repeating-linear-gradient(
+                45deg,
+                #F5FF00,
+                #F5FF00 10px,
+                #000000 10px,
+                #000000 20px
+            );
+        }
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: rgba(245, 255, 0, 0.1);
+            position: absolute;
+            animation: move 4s linear infinite;
+        }
+        @keyframes move {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+        .btn-industrial {
+            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0% 30%);
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans selection:bg-hazard selection:text-black min-h-screen overflow-x-hidden">
+
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="border-b-4 border-industrial bg-black p-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center gap-4">
+            <div class="h-10 w-10 hazard-stripes border-2 border-white"></div>
+            <h1 class="text-3xl tracking-tighter uppercase italic">Carteira do Cabral</h1>
+        </div>
+        <div class="flex items-center gap-8 font-mono text-sm">
+            <div class="flex items-center gap-2 text-hazard">
+                <span class="animate-pulse">●</span>
+                SYSTEM_LIVE: 99.9%
+            </div>
+            <div class="text-white border-l-2 border-industrial pl-4">
+                USER: CABRAL_01
+            </div>
+        </div>
+    </nav>
+
+    <!-- ALERT MARQUEE -->
+    <div class="bg-hazard text-black overflow-hidden whitespace-nowrap py-1 border-b-4 border-black">
+        <div class="inline-block animate-[marquee_20s_linear_infinite] uppercase font-bold text-sm tracking-widest">
+            MARKET VOLATILITY DETECTED // SECTOR 7G BULLISH // UPDATE: BTC +4.2% // LIQUIDITY ALERT // NO SLIPPAGE DETECTED // TERMINAL ACTIVE // 
+            MARKET VOLATILITY DETECTED // SECTOR 7G BULLISH // UPDATE: BTC +4.2% // LIQUIDITY ALERT // NO SLIPPAGE DETECTED // TERMINAL ACTIVE // 
+        </div>
+    </div>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+
+    <main class="p-4 md:p-8 grid grid-cols-12 gap-6 max-w-[1600px] mx-auto">
+        
+        <!-- LEFT COLUMN: PORTFOLIO SUMMARY -->
+        <div class="col-span-12 lg:col-span-8 space-y-6">
+            
+            <!-- TOTAL BALANCE CARD -->
+            <section class="border-4 border-white p-6 relative overflow-hidden bg-industrial/20">
+                <div class="absolute top-0 right-0 p-2 font-mono text-xs opacity-50 uppercase">Asset_Metric_01</div>
+                <div class="scanline"></div>
+                <p class="text-hazard uppercase text-sm mb-2 font-mono tracking-widest">[ TOTAL_EQUITY_VALUATION ]</p>
+                <div class="flex items-end gap-4">
+                    <span class="text-6xl md:text-8xl leading-none">R$ 1.284.000,00</span>
+                    <span class="bg-hazard text-black px-2 py-1 font-mono font-bold mb-2">+12.4%</span>
+                </div>
+            </section>
+
+            <!-- ANALYTICS / FAKE CHART -->
+            <section class="border-4 border-white">
+                <div class="bg-white text-black p-2 flex justify-between items-center">
+                    <h2 class="uppercase px-2 tracking-tighter font-bold">Performance_Chart_Line</h2>
+                    <div class="flex gap-4 font-mono text-xs font-bold">
+                        <button class="hover:underline underline-offset-4">1H</button>
+                        <button class="bg-black text-white px-2">1D</button>
+                        <button class="hover:underline underline-offset-4">1W</button>
+                        <button class="hover:underline underline-offset-4">ALL</button>
+                    </div>
+                </div>
+                <div class="h-[350px] bg-black p-4 relative flex items-end gap-1">
+                    <!-- FAKE BAR CHART -->
+                    <div class="w-full h-full border-l border-b border-industrial relative">
+                        <svg class="w-full h-full" preserveAspectRatio="none">
+                            <polyline
+                                fill="none"
+                                stroke="#F5FF00"
+                                stroke-width="4"
+                                points="0,250 50,220 100,240 150,180 200,190 250,100 300,120 350,50 400,80 450,30 500,60 550,10 600,40 700,0 800,20"
+                                style="vector-effect: non-scaling-stroke;"
+                            />
+                            <path
+                                d="M0,250 L50,220 L100,240 L150,180 L200,190 L250,100 L300,120 L350,50 L400,80 L450,30 L500,60 L550,10 L600,40 L700,0 L800,20 V350 H0 Z"
+                                fill="url(#grad1)"
+                                opacity="0.2"
+                            />
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#F5FF00;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="absolute top-10 left-10 text-hazard/30 font-mono text-xs">GRD_REF_A1</div>
+                        <div class="absolute bottom-10 right-10 text-hazard/30 font-mono text-xs">VAL_REF_Z9</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ASSET TABLE -->
+            <section class="border-4 border-industrial overflow-x-auto">
+                <table class="w-full text-left font-mono">
+                    <thead class="bg-industrial text-white uppercase text-sm">
+                        <tr>
+                            <th class="p-4 border-r border-black">Asset_ID</th>
+                            <th class="p-4 border-r border-black">Quantity</th>
+                            <th class="p-4 border-r border-black">Price_Mkt</th>
+                            <th class="p-4 text-hazard">Delta_24h</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y-2 divide-industrial">
+                        <tr class="hover:bg-industrial/50 transition-colors">
+                            <td class="p-4 font-bold border-r border-industrial">BTC/BRL</td>
+                            <td class="p-4 border-r border-industrial">1.40293</td>
+                            <td class="p-4 border-r border-industrial">345,120.00</td>
+                            <td class="p-4 text-hazard">+4.21%</td>
+                        </tr>
+                        <tr class="hover:bg-industrial/50 transition-colors">
+                            <td class="p-4 font-bold border-r border-industrial">ETH/BRL</td>
+                            <td class="p-4 border-r border-industrial">12.55000</td>
+                            <td class="p-4 border-r border-industrial">14,230.15</td>
+                            <td class="p-4 text-hazard">+1.85%</td>
+                        </tr>
+                        <tr class="hover:bg-industrial/50 transition-colors bg-warning/10">
+                            <td class="p-4 font-bold border-r border-industrial">SOL/BRL</td>
+                            <td class="p-4 border-r border-industrial">245.0000</td>
+                            <td class="p-4 border-r border-industrial">742.10</td>
+                            <td class="p-4 text-warning">-2.14%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- RIGHT COLUMN: ACTIONS & LOGS -->
+        <div class="col-span-12 lg:col-span-4 space-y-6">
+            
+            <!-- QUICK ACTIONS -->
+            <div class="border-4 border-hazard p-4 bg-hazard text-black">
+                <h3 class="text-xl mb-4 italic">CRITICAL_ACTIONS</h3>
+                <div class="grid grid-cols-1 gap-4 font-mono font-bold">
+                    <button class="bg-black text-white p-4 hover:bg-warning hover:text-black transition-all flex justify-between items-center group">
+                        BUY_ASSET
+                        <span class="group-hover:translate-x-2 transition-transform">>></span>
+                    </button>
+                    <button class="bg-black text-white p-4 hover:bg-white hover:text-black transition-all flex justify-between items-center group">
+                        SELL_ASSET
+                        <span class="group-hover:translate-x-2 transition-transform">>></span>
+                    </button>
+                    <button class="bg-white text-black p-4 border-2 border-black hover:bg-industrial hover:text-white transition-all flex justify-between items-center group">
+                        TRANSFER_FUNDS
+                        <span class="group-hover:translate-x-2 transition-transform">>></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SECURITY STATUS -->
+            <div class="border-4 border-industrial p-6 space-y-4">
+                <div class="flex justify-between items-center border-b border-industrial pb-2">
+                    <span class="text-xs font-mono uppercase">Node_Status</span>
+                    <span class="bg-green-500 w-3 h-3 block border-2 border-white"></span>
+                </div>
+                <div class="flex justify-between items-center border-b border-industrial pb-2">
+                    <span class="text-xs font-mono uppercase">Encryption</span>
+                    <span class="text-xs font-mono">AES-256_ACTIVE</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-industrial pb-2">
+                    <span class="text-xs font-mono uppercase">Latency</span>
+                    <span class="text-xs font-mono text-hazard">12ms</span>
+                </div>
+            </div>
+
+            <!-- SYSTEM LOG -->
+            <div class="bg-industrial text-white p-4 font-mono text-[10px] leading-tight border-b-8 border-warning">
+                <p class="text-hazard mb-2 uppercase font-bold text-xs border-b border-hazard/30 pb-1">Realtime_Terminal_Output</p>
+                <p class="opacity-70">[14:02:01] HANDSHAKE_INITIATED...</p>
+                <p class="opacity-70">[14:02:02] FETCHING_MARKET_DATA... DONE</p>
+                <p class="text-hazard">[14:05:12] WARNING: VOL_THRESHOLD_EXCEEDED (SECTOR_SOL)</p>
+                <p class="opacity-70">[14:10:45] AUTH_TOKEN_REFRESHED</p>
+                <p class="opacity-70">[14:15:22] SYNCING_LEDGER_0X4492... OK</p>
+                <p class="animate-pulse text-warning">_ BLINKING_CURSOR_READY</p>
+            </div>
+
+            <!-- DOWNLOAD DATA -->
+             <button class="w-full border-4 border-white p-4 uppercase italic hover:bg-white hover:text-black transition-all text-center">
+                Export_Audit_Log (.CSV)
+             </button>
+        </div>
+
+    </main>
+
+    <!-- FOOTER INFO -->
+    <footer class="p-8 border-t-4 border-industrial mt-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-industrial/10">
+        <div>
+            <p class="font-mono text-xs opacity-50 uppercase tracking-widest">Station ID: CABRAL-PRIME-BRAZIL-01</p>
+            <p class="font-bold text-lg italic">PRECISION_INSTRUMENT // NO_DECORATION</p>
+        </div>
+        <div class="hazard-stripes h-8 w-48 border-2 border-white"></div>
+    </footer>
+
+</body>
+</html>

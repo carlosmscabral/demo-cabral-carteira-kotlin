@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira do Cabral | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#6366F1',
+                        bgMain: '#F8FAFC',
+                        accent: '#EC4899',
+                        success: '#10B981',
+                        surface: '#F1F5F9',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'clay': '32px',
+                    },
+                    boxShadow: {
+                        'clay-sm': 'inset -4px -4px 8px rgba(0,0,0,0.05), inset 4px 4px 8px rgba(255,255,255,0.9), 8px 8px 16px rgba(0,0,0,0.05)',
+                        'clay-card': 'inset -8px -8px 12px rgba(0,0,0,0.05), inset 8px 8px 12px rgba(255,255,255,0.8), 12px 12px 24px rgba(0,0,0,0.08)',
+                        'clay-btn': 'inset -4px -4px 6px rgba(0,0,0,0.1), inset 4px 4px 6px rgba(255,255,255,0.3), 0 10px 15px -3px rgba(99, 102, 241, 0.3)',
+                        'clay-pink': 'inset -4px -4px 6px rgba(0,0,0,0.1), inset 4px 4px 6px rgba(255,255,255,0.3), 0 10px 15px -3px rgba(236, 72, 153, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F8FAFC; overflow-x: hidden; }
+        .clay-card { transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .clay-card:hover { transform: translateY(-4px); }
+        .clay-card:active { transform: scale(0.97); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="font-sans text-slate-800">
+
+    <div class="max-w-md mx-auto min-h-screen flex flex-col p-6 pb-24">
+        
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <p class="text-slate-400 text-sm font-semibold uppercase tracking-wider">Bem-vindo,</p>
+                <h1 class="text-2xl font-extrabold text-slate-900">Cabral 👋</h1>
+            </div>
+            <div class="w-12 h-12 bg-white rounded-full shadow-clay-sm flex items-center justify-center border-4 border-white">
+                <div class="w-full h-full rounded-full bg-gradient-to-tr from-brand to-accent opacity-80"></div>
+            </div>
+        </header>
+
+        <!-- Main Balance Card -->
+        <div class="bg-brand text-white p-8 rounded-clay shadow-clay-card mb-8 relative overflow-hidden group cursor-pointer">
+            <div class="relative z-10">
+                <span class="text-brand-100 text-sm font-semibold bg-white/20 px-3 py-1 rounded-full">Saldo Total</span>
+                <h2 class="text-4xl font-extrabold mt-4 mb-1">R$ 4.250,00</h2>
+                <div class="flex items-center text-success font-bold text-sm bg-white rounded-full px-3 py-1 w-max">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                    </svg>
+                    +12% esse mês
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+        </div>
+
+        <!-- Quick Actions Grid -->
+        <div class="grid grid-cols-2 gap-4 mb-8">
+            <button class="bg-brand text-white font-bold py-4 rounded-3xl shadow-clay-btn clay-card flex flex-col items-center justify-center gap-2">
+                <div class="bg-white/20 p-2 rounded-2xl text-2xl">➕</div>
+                Ganho
+            </button>
+            <button class="bg-accent text-white font-bold py-4 rounded-3xl shadow-clay-pink clay-card flex flex-col items-center justify-center gap-2">
+                <div class="bg-white/20 p-2 rounded-2xl text-2xl">💸</div>
+                Gasto
+            </button>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="mb-8">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-extrabold text-lg">Categorias Pop</h3>
+                <button class="text-brand font-bold text-sm">Ver tudo</button>
+            </div>
+            <div class="flex gap-4 overflow-x-auto pb-4 hide-scrollbar">
+                <div class="flex-shrink-0 w-24 h-28 bg-white shadow-clay-sm rounded-clay flex flex-col items-center justify-center clay-card border-2 border-transparent hover:border-brand/20">
+                    <span class="text-3xl mb-2">🍔</span>
+                    <span class="text-xs font-bold text-slate-500">Comida</span>
+                </div>
+                <div class="flex-shrink-0 w-24 h-28 bg-white shadow-clay-sm rounded-clay flex flex-col items-center justify-center clay-card border-2 border-transparent hover:border-brand/20">
+                    <span class="text-3xl mb-2">🚗</span>
+                    <span class="text-xs font-bold text-slate-500">Uber</span>
+                </div>
+                <div class="flex-shrink-0 w-24 h-28 bg-white shadow-clay-sm rounded-clay flex flex-col items-center justify-center clay-card border-2 border-transparent hover:border-brand/20">
+                    <span class="text-3xl mb-2">🎮</span>
+                    <span class="text-xs font-bold text-slate-500">Lazer</span>
+                </div>
+                <div class="flex-shrink-0 w-24 h-28 bg-white shadow-clay-sm rounded-clay flex flex-col items-center justify-center clay-card border-2 border-transparent hover:border-brand/20">
+                    <span class="text-3xl mb-2">💡</span>
+                    <span class="text-xs font-bold text-slate-500">Contas</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="flex flex-col gap-4">
+            <h3 class="font-extrabold text-lg mb-2">Atividade Recente</h3>
+            
+            <div class="bg-white p-4 rounded-3xl shadow-clay-sm flex items-center gap-4 clay-card">
+                <div class="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center text-xl">🍣</div>
+                <div class="flex-1">
+                    <p class="font-bold text-slate-800">Restaurante Japa</p>
+                    <p class="text-xs text-slate-400 font-semibold">Hoje, 20:30</p>
+                </div>
+                <span class="font-extrabold text-accent">- R$ 120</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl shadow-clay-sm flex items-center gap-4 clay-card">
+                <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center text-xl">💰</div>
+                <div class="flex-1">
+                    <p class="font-bold text-slate-800">Salário Mensal</p>
+                    <p class="text-xs text-slate-400 font-semibold">Ontem, 09:00</p>
+                </div>
+                <span class="font-extrabold text-success">+ R$ 5.000</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl shadow-clay-sm flex items-center gap-4 clay-card">
+                <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center text-xl">🎬</div>
+                <div class="flex-1">
+                    <p class="font-bold text-slate-800">Assinatura Stream</p>
+                    <p class="text-xs text-slate-400 font-semibold">05 Out, 14:20</p>
+                </div>
+                <span class="font-extrabold text-accent">- R$ 39</span>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="fixed bottom-6 left-6 right-6 h-20 bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-[35px] border-8 border-white flex items-center justify-around px-4 z-50">
+            <button class="text-brand p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+            </button>
+            <button class="text-slate-300 p-2 hover:text-brand transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+            </button>
+            <div class="absolute -top-10 bg-brand w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl shadow-clay-btn border-4 border-white cursor-pointer active:scale-90 transition-transform">
+                <span>+</span>
+            </div>
+            <button class="text-slate-300 p-2 hover:text-brand transition-colors ml-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </button>
+            <button class="text-slate-300 p-2 hover:text-brand transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="fixed top-20 -left-20 w-64 h-64 bg-brand/5 rounded-full -z-10 blur-3xl"></div>
+    <div class="fixed bottom-20 -right-20 w-64 h-64 bg-accent/5 rounded-full -z-10 blur-3xl"></div>
+
+</body>
+</html>

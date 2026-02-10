@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira do Cabral | Soberania Financeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#6366F1',
+                        ghost: '#F8FAFC',
+                        pop: '#EC4899',
+                        success: '#10B981',
+                        surface: '#F1F5F9',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'tactile': '0px 4px 0px 0px rgba(0, 0, 0, 0.05)',
+                        'pop': '8px 8px 0px 0px #6366F1',
+                        'pop-pink': '8px 8px 0px 0px #EC4899',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tactile-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .tactile-card:hover {
+            transform: translate(-2px, -2px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-slate-900 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand rounded-xl flex items-center justify-center shadow-tactile">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <span class="font-extrabold text-xl tracking-tight">Carteira do Cabral</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-slate-600">
+                <a href="#features" class="hover:text-brand transition-colors">Privacidade</a>
+                <a href="#testimonials" class="hover:text-brand transition-colors">Relatos</a>
+                <a href="#pricing" class="hover:text-brand transition-colors">Preço</a>
+            </div>
+            <a href="#pricing" class="bg-brand text-white px-6 py-3 rounded-full font-bold shadow-tactile hover:bg-indigo-700 transition-all">Começar Agora</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-16 pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative z-10">
+                <div class="inline-block px-4 py-1.5 bg-brand/10 text-brand rounded-full text-sm font-bold mb-6">
+                    🔒 100% Offline-First
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8">
+                    Seus dados financeiros não pertencem à <span class="text-brand">nuvem.</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+                    Controle tudo de forma 100% privada. Sem servidores, sem rastreamento e sem bisbilhoteiros. A soberania dos seus dados começa no seu bolso.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#pricing" class="bg-brand text-white text-lg px-8 py-4 rounded-2xl font-bold shadow-pop hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all text-center">
+                        Garantir minha soberania
+                    </a>
+                    <div class="flex items-center gap-3 px-6 py-4">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-slate-400 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-slate-500 border-2 border-white"></div>
+                        </div>
+                        <span class="text-sm font-semibold text-slate-500">+1.400 Puristas de Dados</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 bg-brand/5 rounded-full blur-3xl"></div>
+                <div class="relative bg-white p-8 rounded-[2.5rem] shadow-2xl border-4 border-slate-100">
+                    <div class="flex justify-between items-center mb-8">
+                        <h3 class="font-bold text-lg">Fluxo de Caixa Local</h3>
+                        <span class="text-success font-bold">✓ Seguro</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-12 bg-ghost rounded-xl w-full animate-pulse"></div>
+                        <div class="h-12 bg-ghost rounded-xl w-3/4 animate-pulse"></div>
+                        <div class="h-32 bg-brand/5 border-2 border-dashed border-brand/20 rounded-xl flex items-center justify-center">
+                            <span class="text-brand font-bold text-sm text-center px-4">Zero bytes enviados para a internet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features: The Privacy Sovereign Strategy -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-extrabold mb-4">Por que a soberania importa?</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Sua vida financeira é a informação mais sensível que você possui. Por que entregá-la para empresas de tecnologia?</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 bg-surface rounded-[2rem] tactile-card border border-transparent hover:border-brand/20">
+                    <div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center mb-6 shadow-tactile text-2xl">📡</div>
+                    <h3 class="text-xl font-bold mb-4">Zero Conexão Externa</h3>
+                    <p class="text-slate-600 leading-relaxed">A Carteira do Cabral não possui código para se comunicar com servidores. O que acontece no seu celular, fica no seu celular.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-8 bg-surface rounded-[2rem] tactile-card border border-transparent hover:border-pop/20">
+                    <div class="w-14 h-14 bg-pop text-white rounded-2xl flex items-center justify-center mb-6 shadow-tactile text-2xl">🔐</div>
+                    <h3 class="text-xl font-bold mb-4">Criptografia Militar</h3>
+                    <p class="text-slate-600 leading-relaxed">Seus dados são protegidos por AES-256 local. Nem mesmo se alguém roubar seu aparelho conseguirá ler seus registros sem sua senha.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-8 bg-surface rounded-[2rem] tactile-card border border-transparent hover:border-success/20">
+                    <div class="w-14 h-14 bg-success text-white rounded-2xl flex items-center justify-center mb-6 shadow-tactile text-2xl">⚡</div>
+                    <h3 class="text-xl font-bold mb-4">Velocidade Local</h3>
+                    <p class="text-slate-600 leading-relaxed">Sem "carregando...", sem latência de rede. Como o banco de dados é local, a resposta é instantânea, em qualquer lugar do mundo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="testimonials" class="py-24 bg-ghost">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-center mb-16">O que dizem os Soberanos</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-tactile border border-slate-100">
+                    <div class="flex gap-1 mb-4 text-orange-400 text-xl">★★★★★</div>
+                    <p class="italic text-slate-700 mb-6">"Finalmente um app que não quer vender meus hábitos de consumo para bancos. A paz de espírito de saber que meus dados estão só comigo não tem preço."</p>
+                    <p class="font-bold">— Ricardo M., Desenvolvedor</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-tactile border border-slate-100">
+                    <div class="flex gap-1 mb-4 text-orange-400 text-xl">★★★★★</div>
+                    <p class="italic text-slate-700 mb-6">"Uso em modo avião. Literalmente. O Cabral entende que privacidade é um direito, não uma funcionalidade extra."</p>
+                    <p class="font-bold">— Ana Clara P., Investidora</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-tactile border border-slate-100">
+                    <div class="flex gap-1 mb-4 text-orange-400 text-xl">★★★★★</div>
+                    <p class="italic text-slate-700 mb-6">"Tentei todos os apps famosos, todos pediam conta, e-mail e acesso ao banco. O Cabral é o único que respeita meu anonimato."</p>
+                    <p class="font-bold">— Lucas V., Cripto Enthusiast</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="bg-slate-900 rounded-[3rem] p-12 text-white relative overflow-hidden shadow-pop-pink">
+                <div class="absolute top-0 right-0 p-8">
+                    <span class="bg-pop text-white text-xs font-black uppercase px-4 py-1.5 rounded-full tracking-widest">Oferta Única</span>
+                </div>
+                <h2 class="text-4xl font-extrabold mb-6">Licença Vitalícia</h2>
+                <p class="text-slate-400 mb-8 text-lg">Pague uma vez. Seja dono dos seus dados para sempre. Sem assinaturas mensais, sem taxas escondidas.</p>
+                
+                <div class="flex items-baseline gap-2 mb-10">
+                    <span class="text-5xl font-black">R$ 97</span>
+                    <span class="text-slate-400">pagamento único</span>
+                </div>
+
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3">
+                        <span class="text-success text-xl">✔</span> Acesso completo vitalício
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-success text-xl">✔</span> Backup criptografado local
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-success text-xl">✔</span> Exportação CSV a qualquer momento
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-success text-xl">✔</span> Atualizações de segurança gratuitas
+                    </li>
+                </ul>
+
+                <button class="w-full bg-pop hover:bg-pink-600 text-white font-black py-5 rounded-2xl text-xl transition-all shadow-lg active:scale-95">
+                    Quero minha Carteira Privada
+                </button>
+                <p class="text-center text-slate-500 mt-6 text-sm italic">Garantia de 30 dias: Satisfação total ou seu dinheiro de volta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-surface">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-center mb-12">Perguntas Frequentes</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-tactile">
+                    <h4 class="font-bold text-lg mb-2">Como vocês ganham dinheiro se não há assinatura?</h4>
+                    <p class="text-slate-600">Acreditamos no modelo de software honesto: você paga pelo produto e ele é seu. Não vendemos dados, não exibimos anúncios e não temos custos de servidor para manter seus dados, o que nos permite um preço justo e único.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-tactile">
+                    <h4 class="font-bold text-lg mb-2">E se eu trocar de celular?</h4>
+                    <p class="text-slate-600">Você pode gerar um arquivo de backup criptografado em segundos e movê-lo para o seu novo dispositivo via Bluetooth, cabo ou seu serviço de confiança. O controle da chave é seu.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-tactile">
+                    <h4 class="font-bold text-lg mb-2">Preciso conectar minha conta bancária?</h4>
+                    <p class="text-slate-600">Nunca. O Cabral é focado em entrada manual ou importação de arquivos locais. Acreditamos que a automação bancária via APIs de terceiros é a maior brecha de privacidade que existe hoje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <span class="font-extrabold text-lg">Carteira do Cabral</span>
+            </div>
+            <p class="text-slate-500 text-sm">© 2023 Carteira do Cabral. Desenvolvido para quem valoriza a liberdade.</p>
+            <div class="mt-4 flex justify-center gap-6 text-xs font-bold text-slate-400">
+                <a href="#" class="hover:text-brand">TERMOS</a>
+                <a href="#" class="hover:text-brand">PRIVACIDADE</a>
+                <a href="#" class="hover:text-brand">MANIFESTO</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
