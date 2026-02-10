@@ -20,7 +20,7 @@
 
 ## Phase 4: UI Foundation (Tactile Pop)
 - [x] Task: Define Color Palette in `ui/theme/Color.kt` (Indigo, Pink, Emerald). 86cbcc0
-- [ ] Task: Define Type Styles in `ui/theme/Type.kt`.
+- [x] Task: Define Type Styles in `ui/theme/Type.kt`. 9dd88a4
 - [ ] Task: Create `TactileButton` composable (Common button style with animation).
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: UI Foundation (Tactile Pop)' (Protocol in workflow.md)
 
